@@ -1,0 +1,4 @@
+scenario,share_of_waste_forecast_driven,annual_saving_per_store_gbp
+low,0.3,7904.0
+central,0.5,13174.0
+high,0.7,18443.0
