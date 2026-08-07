@@ -26,12 +26,18 @@ The forecast improvement is converted into rough annual savings scenarios based 
 ## Outputs
 
 The repo includes:
-- backtest_predictions.csv
-- metrics.csv
-- waste_scenarios.csv
-- forecast_next_12m.csv
-- charts in outputs/
 
+- [Backtest predictions CSV](outputs/backtest_predictions.csv)
+- [Metrics CSV](outputs/metrics.csv)
+- [Waste scenarios CSV](outputs/waste_scenarios.csv)
+- [Next 12 months forecast CSV](outputs/forecast_next_12m.csv)
+
+### Charts
+
+- ![History chart](outputs/fig1_history.png)
+- ![Backtest chart](outputs/fig2_backtest.png)
+- ![Error chart](outputs/fig3_errors.png)
+- ![Outlook chart](outputs/fig4_outlook.png)
 ## Limitations
 
 This is a simplified forecasting project. The waste numbers are scenario estimates, not measured savings.
