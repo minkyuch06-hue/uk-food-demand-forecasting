@@ -34,10 +34,13 @@ The repo includes:
 
 ### Charts
 
-- ![History chart](outputs/fig1_history.png)
-- ![Backtest chart](outputs/fig2_backtest.png)
-- ![Error chart](outputs/fig3_errors.png)
-- ![Outlook chart](outputs/fig4_outlook.png)
+![History chart](outputs/fig1_history.png)
+
+![Backtest chart](outputs/fig2_backtest.png)
+
+![Error chart](outputs/fig3_errors.png)
+
+![Outlook chart](outputs/fig4_outlook.png)
 ## Limitations
 
 This is a simplified forecasting project. The waste numbers are scenario estimates, not measured savings.
