@@ -1,31 +1,8 @@
 # UK Food Demand Forecasting
 
-This project forecasts monthly UK food retail demand using the ONS EAGW series. The goal is to beat the seasonal naive benchmark and translate the improvement into a simple waste-savings story.
-
-## Data
-
-The project uses the ONS monthly food store sales volume series, which runs from 1988 to 2026.
-
-## Method
-
-I built a 48-month backtest from May 2022 to April 2026 and compared three approaches:
-- naive last month
-- seasonal naive, which repeats the same month last year
-- ridge regression with engineered features
-
-The feature set includes lagged values, rolling averages, month seasonality, Easter timing, and a flag for the pandemic period.
-
-## Results
-
-The ridge model beats seasonal naive on the backtest.
-
-## Business Value
-
-The forecast improvement is converted into rough annual savings scenarios based on avoidable food waste.
+Forecasted monthly UK food retail demand using the ONS EAGW series. A 48-month backtest showed that ridge regression with engineered features beat seasonal naive by 15.9% MAE, and the improvement translated into rough annual savings of £7.9k to £18.4k per store.
 
 ## Outputs
-
-The repo includes:
 
 - [Backtest predictions CSV](outputs/backtest_predictions.csv)
 - [Metrics CSV](outputs/metrics.csv)
@@ -41,9 +18,22 @@ The repo includes:
 ![Error chart](outputs/fig3_errors.png)
 
 ![Outlook chart](outputs/fig4_outlook.png)
+
+## Method
+
+I loaded the ONS monthly food-store series, built lag and calendar features, and ran an expanding-window 48-month backtest. I compared naive, seasonal naive, and ridge regression forecasts, then translated forecast improvement into waste-savings scenarios.
+
+## Results
+
+Ridge regression was the best model in the backtest. It reduced MAE by 15.9% versus seasonal naive.
+
+## Business Value
+
+The forecast improvement suggests rough annual savings of £7.9k to £18.4k per store under low, central, and high assumptions.
+
 ## Limitations
 
-This is a simplified forecasting project. The waste numbers are scenario estimates, not measured savings.
+This is a simplified forecasting project. The waste numbers are scenario estimates, not measured savings, and the forecast is built from a single monthly retail series.
 
 ## How to run
 
