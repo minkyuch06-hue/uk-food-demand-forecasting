@@ -25,7 +25,7 @@ I loaded the ONS monthly food-store series, built lag and calendar features, and
 
 ## Results
 
-Ridge regression was the best model in the backtest. It reduced MAE by 15.9% versus seasonal naive.
+Ridge regression reduced MAE by 15.9% and MAPE by 15.8% versus the seasonal-naive baseline.
 
 ## Business Value
 
